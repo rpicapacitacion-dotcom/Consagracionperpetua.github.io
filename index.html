@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Consagración Perpetua - Capital de Gracias</title>
+<title>Consagración Perpetua - 8vo Curso Corazón de Nazaret</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
 body{margin:0;font-family:'Poppins',sans-serif;background:#fdfaf6;color:#4a3f35;line-height:1.6}
@@ -26,26 +26,23 @@ body{margin:0;font-family:'Poppins',sans-serif;background:#fdfaf6;color:#4a3f35;
 </style>
 </head>
 <body>
-<div class="hero"><div class="hero-text"><h1>Consagración Perpetua</h1><p>Curso Capital de Gracias</p></div></div>
-
+<div class="hero"><div class="hero-text"><h1>Consagración Perpetua</h1><p>8vo Curso Corazón de Nazaret</p></div></div>
 <div class="card">
 <div class="badge">INVITACIÓN ESPECIAL</div>
 <h2 style="font-family:'Playfair Display',serif;text-align:center">Nos consagramos para siempre</h2>
 <div class="fecha" style="text-align:center">📅 11 de Diciembre - 19:30</div>
 <div class="contador"><div class="box"><span id="d">0</span><small>Días</small></div><div class="box"><span id="h">0</span><small>Horas</small></div><div class="box"><span id="m">0</span><small>Min</small></div><div class="box"><span id="s">0</span><small>Seg</small></div></div>
 <p>Querida familia de Schoenstatt,<br><br>Con inmensa alegría te invitamos a nuestra <b>CONSAGRACIÓN PERPETUA</b> a la Mater.<br>Tu oración es indispensable para este paso definitivo.</p>
-
 <div class="oracion-box">
 <h3 style="margin-top:0;font-family:'Playfair Display';text-align:center">🙏 Oración por nuestra Consagración</h3>
 <p style="font-style:italic">
 Madre y Reina tres veces Admirable,<br>
-en este tiempo de gracia, te presentamos a tus hijos del Curso Capital de Gracias que anhelan consagrarse a Ti para siempre.<br><br>
+en este tiempo de gracia, te presentamos a tus hijos del 8vo curso "Corazón de Nazaret" que anhelan consagrarse a Ti para siempre.<br><br>
 Recibe sus corazones, sus familias y su sí definitivo. Que en la fuerza de la Alianza, sean fiel reflejo de tu amor y lleven a Cristo al mundo.<br><br>
 ¡Mater, aquí estamos, tuyos para siempre! Amén.
 </p>
 <p style="text-align:center">Rezar 1 Ave María por nuestra perseverancia</p>
 </div>
-
 <div style="background:#fff;border:2px solid #8a6d4b;border-radius:20px;padding:22px;margin:25px 0;text-align:center">
 <div class="total" id="totalCount">0</div>
 <div style="font-weight:600;color:#8a6d4b;letter-spacing:1px">PERSONAS REZANDO POR NOSOTROS</div>
@@ -56,19 +53,13 @@ Recibe sus corazones, sus familias y su sí definitivo. Que en la fuerza de la A
 </div>
 <div id="listaOraciones" class="lista" style="display:none"></div>
 </div>
-
 <a class="btn" style="background:#25D366" id="btnWsp" href="#" target="_blank">Compartir invitación por WhatsApp 📲</a>
 <div style="text-align:center;margin-top:15px;color:#b08968;font-size:.9em">Santuario de Schoenstatt - Guayaquil - 19:30</div>
 </div>
-
 <script>
-// Contador fecha
 const f=new Date('2026-12-11T19:30:00-05:00').getTime();
 setInterval(()=>{const d=f-new Date().getTime();if(d>0){document.getElementById('d').innerText=Math.floor(d/86400000);document.getElementById('h').innerText=Math.floor(d%86400000/3600000);document.getElementById('m').innerText=Math.floor(d%3600000/60000);document.getElementById('s').innerText=Math.floor(d%60000/1000)}},1000);
-
-// Capital de Gracias - contador
 let oraciones = JSON.parse(localStorage.getItem('capitalGracias') || '[]');
-
 function render(){
  document.getElementById('totalCount').innerText = oraciones.length;
  const lista = document.getElementById('listaOraciones');
@@ -76,7 +67,7 @@ function render(){
    lista.style.display='block';
    lista.innerHTML = oraciones.slice().reverse().map(o=>`<div class="item"><span><b>${o.nombre}</b> <small style="color:#8a6d4b">- ${o.curso}</small></span><span>🙏</span></div>`).join('');
  } else { lista.style.display='none'; }
- document.getElementById('btnWsp').href = `https://wa.me/?text=Me%20uní%20en%20oración%20por%20la%20Consagración%20Perpetua%20del%20Curso%20Capital%20de%20Gracias.%20Ya%20somos%20${oraciones.length}%20rezando!%20Únete:%20https://rpicapacitacion-dotcom.github.io/Consagracionperpetua.github.io/`;
+ document.getElementById('btnWsp').href = `https://wa.me/?text=Me%20uní%20en%20oración%20por%20la%20Consagración%20Perpetua%20del%208vo%20Curso%20Corazón%20de%20Nazaret.%20Ya%20somos%20${oraciones.length}%20rezando!%20Únete:%20https://rpicapacitacion-dotcom.github.io/Consagracionperpetua.github.io/`;
 }
 function sumarOracion(){
  const nombre = document.getElementById('nombre').value.trim();
@@ -93,3 +84,5 @@ render();
 </script>
 </body>
 </html>
+
+
