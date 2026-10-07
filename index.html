@@ -30,7 +30,7 @@ body{margin:0;font-family:'Poppins',sans-serif;background:#fdfaf6;color:#4a3f35;
 <div class="card">
 <div class="badge">INVITACIÓN ESPECIAL</div>
 <h2 style="font-family:'Playfair Display',serif;text-align:center">Nos consagramos para siempre</h2>
-<div class="fecha" style="text-align:center">📅 11 de Diciembre - 19:30</div>
+<div class="fecha" style="text-align:center">11 de Diciembre - 18h00</div>
 <div class="contador"><div class="box"><span id="d">0</span><small>Días</small></div><div class="box"><span id="h">0</span><small>Horas</small></div><div class="box"><span id="m">0</span><small>Min</small></div><div class="box"><span id="s">0</span><small>Seg</small></div></div>
 <p>Querida familia de Schoenstatt,<br><br>Con inmensa alegría te invitamos a nuestra <b>CONSAGRACIÓN PERPETUA</b> a la Mater.<br>Tu oración es indispensable para este paso definitivo.</p>
 <div class="oracion-box">
@@ -54,10 +54,10 @@ Recibe sus corazones, sus familias y su sí definitivo. Que en la fuerza de la A
 <div id="listaOraciones" class="lista" style="display:none"></div>
 </div>
 <a class="btn" style="background:#25D366" id="btnWsp" href="#" target="_blank">Compartir invitación por WhatsApp 📲</a>
-<div style="text-align:center;margin-top:15px;color:#b08968;font-size:.9em">Santuario de Schoenstatt - Guayaquil - 19:30</div>
+<div style="text-align:center;margin-top:15px;color:#b08968;font-size:.9em">Santuario de Schoenstatt - Guayaquil - 18h00</div>
 </div>
 <script>
-const f=new Date('2026-12-11T19:30:00-05:00').getTime();
+const f=new Date('2026-12-11T18:00:00-05:00').getTime();
 setInterval(()=>{const d=f-new Date().getTime();if(d>0){document.getElementById('d').innerText=Math.floor(d/86400000);document.getElementById('h').innerText=Math.floor(d%86400000/3600000);document.getElementById('m').innerText=Math.floor(d%3600000/60000);document.getElementById('s').innerText=Math.floor(d%60000/1000)}},1000);
 let oraciones = JSON.parse(localStorage.getItem('capitalGracias') || '[]');
 function render(){
@@ -67,7 +67,7 @@ function render(){
    lista.style.display='block';
    lista.innerHTML = oraciones.slice().reverse().map(o=>`<div class="item"><span><b>${o.nombre}</b> <small style="color:#8a6d4b">- ${o.curso}</small></span><span>🙏</span></div>`).join('');
  } else { lista.style.display='none'; }
- document.getElementById('btnWsp').href = `https://wa.me/?text=Me%20uní%20en%20oración%20por%20la%20Consagración%20Perpetua%20del%208vo%20Curso%20Corazón%20de%20Nazaret.%20Ya%20somos%20${oraciones.length}%20rezando!%20Únete:%20https://rpicapacitacion-dotcom.github.io/Consagracionperpetua.github.io/`;
+ document.getElementById('btnWsp').href = `https://wa.me/?text=Me%20uní%20en%20oración%20por%20la%20Consagración%20Perpetua%20del%208vo%20Curso%20Corazón%20de%20Nazaret%20-%2011%20Dic%2018h00.%20Ya%20somos%20${oraciones.length}%20rezando!%20Únete:%20https://rpicapacitacion-dotcom.github.io/Consagracionperpetua.github.io/`;
 }
 function sumarOracion(){
  const nombre = document.getElementById('nombre').value.trim();
@@ -84,5 +84,3 @@ render();
 </script>
 </body>
 </html>
-
-
