@@ -5,30 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Consagración Perpetua - 8vo Corazón de Nazaret</title>
 <style>
-body{margin:0;background:#fdfaf5;font-family:Inter,system-ui,Arial,sans-serif;color:#2c2c2c;display:flex;justify-content:center;padding:16px}
-.contenedor{max-width:680px;width:100%}
-.header{text-align:center;padding:24px 10px 10px}
-.fecha{background:#fff;border:1px solid #efe6d8;display:inline-block;padding:8px 16px;border-radius:20px;font-weight:600;color:#8b6a3a;margin-bottom:18px}
-.contador{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:24px}
+body{margin:0;background:#fdfaf5;font-family:system-ui,sans-serif;color:#2c2c2c;display:flex;justify-content:center;padding:16px}
+.contenedor{max-width:700px;width:100%}
+.fecha{background:#fff;border:1px solid #efe6d8;display:inline-block;padding:10px 20px;border-radius:24px;font-weight:700;color:#6b4a26;letter-spacing:0.5px}
+.contador{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px auto 24px auto;max-width:420px}
 .caja{background:#f7ede0;border-radius:16px;padding:14px 6px;text-align:center}
-.caja b{display:block;font-size:30px;color:#6b4a26;line-height:1}
-.caja span{font-size:13px;color:#9c846a}
+.caja b{display:block;font-size:32px;color:#6b4a26}
+.caja span{font-size:12px;color:#9c846a}
 .card{background:#fff;border-radius:24px;box-shadow:0 12px 40px rgba(0,0,0,0.08);overflow:hidden}
-.foto{width:100%;height:360px;object-fit:cover;display:block}
+.foto{width:100%;height:auto;display:block}
 .contenido{padding:28px 26px}
-h1{font-family:Georgia,serif;color:#1a3a6e;font-size:24px;margin:0 0 16px 0;text-align:center;line-height:1.2}
 .texto{font-size:16.5px;line-height:1.65;color:#444}
-.texto strong{color:#1a3a6e}
-.oracion{margin-top:26px;background:#f7f3ec;border-left:4px solid #c5a059;border-radius:12px;padding:18px 16px;font-family:Georgia,serif;font-style:italic;font-size:18px;color:#333;text-align:center}
-.peticion{margin-top:18px;background:#1a3a6e;color:#fff;border-radius:12px;padding:14px;text-align:center;font-size:14px}
-.btn{display:block;margin:24px auto 0 auto;background:#6b4a26;color:#fff;text-align:center;padding:16px;border-radius:30px;text-decoration:none;font-weight:600;font-size:16px;width:90%;max-width:360px}
-footer{text-align:center;padding:20px;font-size:11px;color:#aaa;letter-spacing:1px;text-transform:uppercase}
+.oracion{margin-top:26px;background:#f7f3ec;border-left:4px solid #c5a059;border-radius:12px;padding:18px 16px;font-family:Georgia,serif;font-style:italic;font-size:18px;text-align:center}
+.btn{display:block;margin:24px auto 0 auto;background:#6b4a26;color:#fff;text-align:center;padding:16px;border-radius:30px;text-decoration:none;font-weight:700;width:90%;max-width:360px}
 </style>
 </head>
 <body>
 <div class="contenedor">
-  <div class="header">
-    <div class="fecha">📅 11 de Diciembre - 19:30</div>
+  <div style="text-align:center;padding:20px 10px 0">
+    <div class="fecha">11 de Diciembre - 18h00</div>
     <div class="contador" id="contador">
       <div class="caja"><b id="d">--</b><span>Días</span></div>
       <div class="caja"><b id="h">--</b><span>Horas</span></div>
@@ -36,58 +31,37 @@ footer{text-align:center;padding:20px;font-size:11px;color:#aaa;letter-spacing:1
       <div class="caja"><b id="s">--</b><span>Seg</span></div>
     </div>
   </div>
-
   <div class="card">
-    <img src="foto-curso.jpg" class="foto" alt="8vo Curso Corazón de Nazaret">
-
+    <img src="foto-curso.jpg?v=18h00" class="foto" alt="Curso">
     <div class="contenido">
       <div class="texto">
         Querida familia de Schoenstatt,<br><br>
-        Con inmensa alegría te invitamos a nuestra <strong>CONSAGRACIÓN PERPETUA</strong> a la Mater.<br><br>
+        Con inmensa alegría te invitamos a nuestra <b>CONSAGRACIÓN PERPETUA</b> a la Mater.<br><br>
         Después de un camino de preparación queremos sellar para siempre nuestra alianza de amor.<br><br>
         Tu oración es indispensable.<br><br>
-        Con gratitud,<br>
-        <strong>Curso Capital de Gracias<br>8vo Corazón de Nazaret</strong>
+        Con gratitud,<br><b>Curso Capital de Gracias - 8vo Corazón de Nazaret</b>
       </div>
-
       <div class="oracion">
-        🙏<br>
-        <b>Madre y Reina tres veces Admirable,</b><br>
-        en este tiempo de gracia, te presentamos a tus hijos del 8vo curso "Corazón de Nazaret" que anhelan consagrarse a la Federación Apostólica de Familias de manera perpetua.<br><br>
-        Recibe sus corazones, sus familias y su sí definitivo. Que en la fuerza de la Alianza, sean fiel reflejo de tu amor y lleven a Cristo al mundo.<br><br>
-        Amén.
-        <div style="margin-top:12px;font-style:normal;font-size:13px;color:#8a7355"><b>Rezar 1 Ave María por nuestra perseverancia</b></div>
+        🙏 Madre y Reina tres veces Admirable,<br>
+        en este tiempo de gracia, te presentamos a tus hijos del 8vo curso "Corazón de Nazaret" que anhelan consagrarse de manera perpetua.<br><br>
+        Amén.<br><br>
+        <span style="font-size:13px;font-style:normal;color:#8a7355"><b>Rezar 1 Ave María por nuestra perseverancia</b></span>
       </div>
-
-      <a class="btn" id="btnWsp" href="#" target="_blank">Compartir por WhatsApp 📲</a>
+      <a class="btn" id="btnWsp" href="#">Compartir por WhatsApp 📲</a>
     </div>
   </div>
-
-  <footer>Federación Apostólica de Familias • Schoenstatt</footer>
 </div>
-
 <script>
-// FECHA OBJETIVO: 11 Diciembre 2026 19:30 Guayaquil
-const target = new Date("2026-12-11T19:30:00-05:00").getTime();
+const target=new Date("2026-12-11T18:00:00-05:00").getTime();
 function tick(){
-  const now = new Date().getTime();
-  const diff = target - now;
-  if(diff<=0){document.getElementById("contador").innerHTML="<div style='grid-column:1/-1;text-align:center;padding:10px;color:#6b4a26;font-weight:600'>¡Hoy es el gran día! Nos consagramos</div>";return}
-  const d=Math.floor(diff/(1000*60*60*24));
-  const h=Math.floor((diff%(1000*60*60*24))/(1000*60*60));
-  const m=Math.floor((diff%(1000*60*60))/(1000*60));
-  const s=Math.floor((diff%(1000*60))/1000);
-  document.getElementById("d").innerText=d;
-  document.getElementById("h").innerText=h;
-  document.getElementById("m").innerText=m;
-  document.getElementById("s").innerText=s;
+  const diff=target-new Date().getTime(); if(diff<=0)return;
+  document.getElementById("d").innerText=Math.floor(diff/(1000*60*60*24));
+  document.getElementById("h").innerText=Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+  document.getElementById("m").innerText=Math.floor((diff%(1000*60*60))/(1000*60));
+  document.getElementById("s").innerText=Math.floor((diff%(1000*60))/1000);
 }
 setInterval(tick,1000);tick();
-
-// Botón WhatsApp
-const url = window.location.href;
-const textoWsp = encodeURIComponent("Querida familia de Schoenstatt, te invitamos a nuestra Consagración Perpetua 8vo Corazón de Nazaret el 11 de Diciembre - 19:30. Tu oración es indispensable 🙏 " + url);
-document.getElementById("btnWsp").href = "https://wa.me/?text=" + textoWsp;
+document.getElementById("btnWsp").href="https://wa.me/?text="+encodeURIComponent("Te invitamos a nuestra Consagración Perpetua 8vo Corazón de Nazaret 11 Dic 18h00 🙏 "+window.location.href);
 </script>
 </body>
 </html>
